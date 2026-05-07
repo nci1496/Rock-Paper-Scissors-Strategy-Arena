@@ -1,10 +1,15 @@
 # Rock–Paper–Scissors Strategy Arena
 
 一个基于 Python + Tkinter 的“石头剪刀布”策略竞技项目，用于比较不同 AI Agent 的博弈表现。项目内置多种策略体，支持单场对战、全量两两对战和生存淘汰赛，适合用于策略实验、教学演示和玩法验证。
+![生存模式实例](screenshot/1.png)
+生存模式实例图
+
+![对战模式实例](screenshot/2.png)
+两个agent对战实例图
 
 ## 功能特性
 
-- 可视化界面：内置 Agent 浏览器，可查看每个策略的说明并快速配置对战参数。
+- 可视化界面：内置 Agent 控制台，可查看每个策略的说明并快速配置对战参数。
 - 单场对战（1v1）：选择 Agent A / Agent B，设置回合数与随机种子，输出胜负、胜率、平局率等结果。
 - 全量两两对战（All-Pairs）：自动遍历全部 Agent 的组合并行跑分，生成排行榜。
 - 生存模式（Survival）：按阶段进行群体对战，每阶段淘汰末尾并克隆头部策略（保留策略记忆状态），观察长期演化表现。
@@ -80,11 +85,3 @@ python main.py
 1. 在 `agents/` 下新增 Agent 类（继承 `Agent` 并实现 `next_move`）
 2. 在 `agents/__init__.py` 中注册到 `AVAILABLE_AGENTS`
 3. （可选）补充 `AGENT_DESCRIPTIONS` 说明文本
-
-## 截图
-
-![生存模式实例](screenshot/1.png)
-生存模式实例图
-
-![对战模式实例](screenshot/2.png)
-两个agent对战实例图
