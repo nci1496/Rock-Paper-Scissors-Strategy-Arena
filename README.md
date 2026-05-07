@@ -81,6 +81,10 @@ python main.py
 2. 在 `agents/__init__.py` 中注册到 `AVAILABLE_AGENTS`
 3. （可选）补充 `AGENT_DESCRIPTIONS` 说明文本
 
-## License
+## 截图
 
-可按你的发布计划补充（例如 MIT）。
+![生存模式实例](screenshot/1.png)
+生存模式实例图
+
+![对战模式实例](screenshot/2.png)
+两个agent对战实例图
